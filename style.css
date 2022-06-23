@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* styles for header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -35,6 +35,7 @@ a {
   text-decoration: none;
   color: black;
 }
+/* styles for hero text, sign up button, and storefront photo */
 .container {
   display: flex;
   justify-content: space-between;
@@ -53,13 +54,13 @@ a {
 }
 .button {
   background-color: #3882f6;
-  color: white;
+  color: #e5e7eb;
   width: 100px;
   height: 30px;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 5px;
-  border: none;
+  border-style: none;
 }
 .storefront {
   border-style: solid;
@@ -84,6 +85,7 @@ a {
 .info-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
   margin-bottom: 60px;
@@ -94,8 +96,8 @@ a {
   padding: 20px;
 }
 .info-image {
-  width: 180px;
-  height: auto;
+  width: 250px; /* had to hardcode because auto made one unproportional */
+  height: 250px;
   border-radius: 10px;
   border-color: green;
   border-style: solid;
@@ -106,3 +108,79 @@ a {
   text-align: center;
   color: black;
 }
+/* styles for quote section */
+.quote-container {
+  height: 400px;
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.quote {
+  font-size: 36px;
+  font-family: "roboto", sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
+.quote-author {
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 450px;
+}
+/* styles for call to action section */
+.cta-background {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.call-to-action-container {
+  background-color: #3882f6;
+  width: 1000px;
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.call-to-action {
+  font-size: 20px;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  color: #e5e7eb;
+}
+.click-the-button {
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+  color: #e5e7eb;
+}
+.button2 {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border-radius: 5px;
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+  border-style: solid;
+  width: 100px;
+  height: 30px;
+}
+/* styles for footer */
+.footer-container {
+  height: 120px;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-text {
+  color: white;
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+}
+/* End of code. I definitely had to look a lot of things up, but I'm much more comfortable 
+with nesting html elements and targeting them with flexbox. I think with more specific 
+parameter for txt size, colors, etc this project could be improved because a lot of mine 
+is best guess for sizing, spacing, etc based on the provided images of The Odin Project's
+example. */
